@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabela com CSS</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João Silva</td>
+          <td>joao.silva@exemplo.com</td>
+          <td>(11) 9999-9999</td>
+        </tr>
+        <tr>
+          <td>Maria Santos</td>
+          <td>maria.santos@exemplo.com</td>
+          <td>(21) 9999-8888</td>
+        </tr>
+        <tr>
+          <td>Pedro Oliveira</td>
+          <td>pedro.oliveira@exemplo.com</td>
+          <td>(31) 9999-7777</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
