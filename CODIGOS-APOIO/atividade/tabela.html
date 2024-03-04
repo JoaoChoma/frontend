@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .schedule-container {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 800px;
+            /* Ajuste conforme necessário */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        thead th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .info-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .info-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="schedule-container">
+        <h2>Programação das Palestras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Título da Palestra</th>
+                    <th>Palestrante</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td>Inovação em Tecnologia</td>
+                    <td>João Silva</td>
+                    <td><button class="info-button">Mais informações</button></td>
+                </tr>
+                <tr>
+                    <td>10:15 - 11:15</td>
+                    <td>O Futuro da Web</td>
+                    <td>Maria Fernandes</td>
+                    <td><button class="info-button">Mais informações</button></td>
+                </tr>
+                <!-- Mais linhas podem ser adicionadas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  caption {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+  }
+  
+  thead th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+  }
+  
+  input[type="number"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  

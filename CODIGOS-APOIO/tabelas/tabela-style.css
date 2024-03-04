@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* remover espaços entre as bordas das células */
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: left;
+}
+
+thead {
+    background-color: #2819ff;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) { /* https://www.w3schools.com/cssref/sel_nth-child.php */
+    background-color: #eee;
+}

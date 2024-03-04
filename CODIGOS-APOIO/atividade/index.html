@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Inscrição - Conferência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form id="registrationForm" action="/submit" method="post">
+        <h2>Formulário de Inscrição</h2>
+        
+        <div class="form-group">
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Endereço de Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="registrationType">Tipo de Inscrição:</label>
+            <select id="registrationType" name="registrationType">
+                <option value="participant">Participante</option>
+                <option value="speaker">Palestrante</option>
+                <option value="volunteer">Voluntário</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Aceito os termos e condições</label>
+        </div>
+        
+        <button type="submit">Inscrever-se</button>
+    </form>
+</div>
+
+</body>
+</html>

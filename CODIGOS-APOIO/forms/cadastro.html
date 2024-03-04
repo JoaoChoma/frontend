@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="cadastro-style.css">
+</head>
+
+<body>
+
+    <div class="signup-container">
+        <h2>Cadastro de Usuário</h2>
+        <form id="signupForm" action="/submit" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required minlength="6">
+            </div>
+            <div class="form-group">
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
