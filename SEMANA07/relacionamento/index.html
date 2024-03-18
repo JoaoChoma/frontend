@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacionamento Abusico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function sim(){
+            alert("Aqui está o meu telefone: 123-456-789");
+        }
+        function nao(){
+            var sim = prompt("Voce tem certeza? Sim ou Não?");
+            while(sim!="sim"){
+                var sim = prompt("Voce tem certeza, mesmo? Sim ou Não?");
+            }
+            alert("Aqui está o meu telefone: 123-456-789");
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Você quer namorar comigo?</h1>
+        <button onclick="sim()" id="simBtn">Sim</button>
+        <button onclick="nao()" id="naoBtn">Não</button>
+    </div>
+</body>
+
+</html>

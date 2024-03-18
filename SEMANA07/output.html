@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        output {
+            display: block;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="valor1">Digite um valor:</label>
+        <input type="number" id="valor1" name="valor1">
+        <label for="valor2">Digite outro valor:</label>
+        <input type="number" id="valor2" name="valor2">
+        <output for="valor1 valor2"></output>
+    </form>
+    <script>
+        const valor1 = document.getElementById('valor1');
+        const valor2 = document.getElementById('valor2');
+        const resultado = document.querySelector('output');
+
+        valor1.addEventListener('input', () => {
+            resultado.value = Number(valor1.value) + Number(valor2.value);
+        });
+
+        valor2.addEventListener('input', () => {
+            resultado.value = Number(valor1.value) + Number(valor2.value);
+        });
+    </script>
+</body>
+</html>
