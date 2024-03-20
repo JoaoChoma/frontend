@@ -23,5 +23,7 @@ Se o furmulário informar que uma resposta já foi enviada clicar no editar resp
 # ATIVIDADES PUBLICADAS PARA RESOLUÇÃO
 
 ATIVIDADE 01 - ATÉ 04/03
+
 ATIVIDADE 02 - ATÉ 11/03
-ATIVIDADE 03 - ATÉ 20/03
+
+ATIVIDADE 03 - ATÉ 22/03
