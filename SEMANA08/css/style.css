@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #targetElement {
+    width: 200px;
+    height: 100px;
+    background-color: #ffcccc;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
