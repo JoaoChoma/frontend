@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplos de Funções com Parâmetros</title>
+</head>
+<body>
+    <h1>Exemplos de Funções com Parâmetros</h1>
+
+    <script>
+        // Exemplo 1: Função para somar dois números
+        function somar(a, b) {
+            return a + b;
+        }
+
+        let resultadoSoma = somar(5, 3);
+        console.log(resultadoSoma); // Saída: 8
+
+        // Exemplo 2: Função para calcular o quadrado de um número
+        function calcularQuadrado(numero) {
+            return numero * numero;
+        }
+
+        let numero = 7;
+        let resultadoQuadrado = calcularQuadrado(numero);
+        console.log(resultadoQuadrado); // Saída: 49
+
+        // Exemplo 3: Função para verificar o sinal de um número
+        function verificarSinal(numero) {
+            if (numero > 0) {
+                return "Positivo";
+            } else if (numero < 0) {
+                return "Negativo";
+            } else {
+                return "Zero";
+            }
+        }
+
+        let numero1 = 10;
+        let numero2 = -5;
+        let numero3 = 0;
+
+        console.log(verificarSinal(numero1)); // Saída: Positivo
+        console.log(verificarSinal(numero2)); // Saída: Negativo
+        console.log(verificarSinal(numero3)); // Saída: Zero
+
+        // Exemplo 4: Função para calcular a média de três números
+        function calcularMedia(a, b, c) {
+            return (a + b + c) / 3;
+        }
+
+        let nota1 = 8;
+        let nota2 = 7;
+        let nota3 = 6;
+
+        let media = calcularMedia(nota1, nota2, nota3);
+        console.log(media); // Saída: 7
+
+        // Exemplo 5: Função para concatenar duas strings
+        function concatenarStrings(str1, str2) {
+            return str1 + " " + str2;
+        }
+
+        let nome = "João";
+        let sobrenome = "Silva";
+
+        let nomeCompleto = concatenarStrings(nome, sobrenome);
+        console.log(nomeCompleto); // Saída: João Silva
+    </script>
+</body>
+</html>

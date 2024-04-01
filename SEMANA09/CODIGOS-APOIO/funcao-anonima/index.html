@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Opções de Pagamento.</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Programa Formas de Pagamento Parcelado.</h1>
+        </nav>
+    </header>
+    <div class="conteudo">
+        <p>
+            Preço R$:
+            <input type="text" id="enPreco" class="numero" autofocus>
+            <input type="button" value="Opções de Pagamento" id="btParcelas">
+        </p>
+        <pre id="rsParcelas"></pre>
+    </div>
+    <script>
+        //Implementando a referência do botão Parcelas.
+        var btParcelas = document.getElementById("btParcelas");
+        //Evento que, ao clicar no botão, a programação da função anônima é executada.
+        btParcelas.addEventListener("click", function () {
+            //Implementando as referências aos elementos do documento HTML.
+            var enPreco = document.getElementById("enPreco");
+            var rsParcelas = document.getElementById("rsParcelas");
+            //Obtendo o conteúdo do campo de Preço.
+            var preco = Number(enPreco.value);
+
+            //Acumulador para as formas de pagamento em parcelas.
+            var lista = "";
+
+            //Estrutura de repetição para montar as opções de pagamento parcelado.
+            for (var i = 1; i <= 10; i++) {
+                //Armazena na lista o nº de parcelas e o cálculo dos valores parcelados.
+                lista += i + "x de R$: " + (preco / i).toFixed(2) + "\n";
+            }
+            // Exibir a lista no elemento rsParcelas.
+            rsParcelas.textContent = "Formas de Pagamento\n\n" + lista;
+        }); 
+    </script>
+</body>
+
+</html>
