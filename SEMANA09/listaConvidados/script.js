@@ -11,6 +11,7 @@ botao.addEventListener("click", function() {
     convidados.push(nome.value);
     nome.value = "";
     atualizar();
+    console.log(convidados);
     
 });
 

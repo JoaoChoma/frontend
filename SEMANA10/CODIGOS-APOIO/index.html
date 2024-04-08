@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário com Validação</title>
+<style>
+  /* Estilos demonstrando o Box Model */
+  .input-group {
+    margin-bottom: 20px; /* Margem externa */
+  }
+
+  input, button {
+    width: 100%; /* Largura do conteúdo */
+    padding: 10px; /* Preenchimento interno */
+    margin-top: 5px; /* Margem externa */
+    border: 1px solid #ccc; /* Borda */
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+
+  /* O Box Model é aplicado acima, definindo o espaço em torno e dentro dos elementos */
+</style>
+</head>
+<body>
+
+<div id="form-container">
+  <form id="cadastroForm">
+    <div class="input-group">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+    </div>
+    <div class="input-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Previne o comportamento padrão de submissão do formulário
+
+    // Captura os valores dos inputs
+    var nome = document.getElementById('nome').value.trim();
+    var email = document.getElementById('email').value.trim();
+
+    // Verifica se algum dos campos está vazio
+    if (isEmpty(nome) || isEmpty(email)) {
+      alert('Por favor, preencha todos os campos.');
+    } else {
+      // Aqui você pode adicionar o código para processar o formulário
+      alert('Formulário enviado com sucesso!');
+      // Por exemplo, enviar os dados para um servidor ou exibir na página
+    }
+  });
+
+  // Função para verificar se um campo está vazio
+  function isEmpty(value) {
+    return value === '';
+  }
+</script>
+
+</body>
+</html>
