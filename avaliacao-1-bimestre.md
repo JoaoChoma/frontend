@@ -9,6 +9,7 @@
 
 # Utilização de CSS:
   - Integração de CSS com HTML para aplicar estilos.
+  - Estilizações trabalhadas em aula.
 
 # Conceitos Fundamentais de JavaScript:
   - Funções em JavaScript: passagem de parâmetros, retorno de valores, funções anônimas e funções atribuídas às variáveis.
