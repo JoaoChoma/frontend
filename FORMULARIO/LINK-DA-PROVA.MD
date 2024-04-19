@@ -1,3 +1,0 @@
-# LINK DA PROVA DE HOJE 18/04
-
-TURMA D - https://forms.gle/9Nks9FGUTUCyQyEk6
