@@ -1,3 +1,0 @@
-# LINK DA PROVA DE HOJE 24/04
-
-TURMA EXTRA - https://forms.gle/ThbWKJjZqRCTiP4z5
