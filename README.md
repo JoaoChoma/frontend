@@ -8,13 +8,13 @@ Turmas ENGSOFT 3S A, B, C e D
 
 ATENÇÃO GALERA, CADA TURMA TEM UM FORMULÁRIO PARA ENTREGA DAS ATIVIDADES OK? SE ENTREGAR NO LUGAR ERRADO EU NÃO CONSIGO FAZER A PONTUAÇÃO.
 
-ESOFT3S-N-A - 
+ESOFT3S-N-A - https://forms.gle/EJAAdkBg1wDcieFi7
 
-ESOFT3S-N-B - 
+ESOFT3S-N-B - https://forms.gle/5j34wam9VqGJ89FS7
 
-ESOFT3S-N-C - 
+ESOFT3S-N-C - https://forms.gle/jncf81XZ1JLWpxX19
 
-ESOFT3S-N-D - 
+ESOFT3S-N-D - https://forms.gle/NQ6nZjxZvzVHRdNn8
 
 DAS ATIVIDADES: As atividades estão disponíveis na pasta LISTA-ATIVIDADES - https://github.com/JoaoChoma/frontend/tree/main/LISTA-ATIVIDADES
 

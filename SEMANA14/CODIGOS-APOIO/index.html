@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de Compras</h1>
+        <div id="form-container">
+            <input type="text" id="item" placeholder="Item" required>
+            <input type="number" id="valor" placeholder="Valor" step="0.01" required>
+            <button onclick="salvar()">Salvar</button>
+            <button onclick="limparForm()">Limpar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="item-list">
+                <!-- Itens serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+        <p id="valor-total">Valor Total: R$ 0.00</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
