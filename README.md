@@ -21,3 +21,5 @@ DAS ATIVIDADES: As atividades estão disponíveis na pasta LISTA-ATIVIDADES - ht
 Se o furmulário informar que uma resposta já foi enviada clicar no editar resposta.
 
 # ATIVIDADES PUBLICADAS PARA RESOLUÇÃO
+
+- RESOLUÇÃO DA AVALIAÇÃO DO 1 BIMESTRE
