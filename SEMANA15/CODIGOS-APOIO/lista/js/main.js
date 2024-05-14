@@ -65,8 +65,8 @@ function atualizarTabela() {
             <td>${item.item}</td>
             <td>R$ ${item.valor.toFixed(2)}</td>
             <td>
-                <button onclick="editarItem(${indice})">Editar</button>
-                <button onclick="excluirItem(${indice})">Excluir</button>
+                <button onclick="editarItem(${indice})" class="btn btn-primary me-2">Editar</button>
+                <button onclick="excluirItem(${indice})" class="btn btn-secondary">Excluir</button>
             </td>
         `;
         tableBody.appendChild(tr);
