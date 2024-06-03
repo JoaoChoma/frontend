@@ -27,6 +27,8 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
   const dadosRecuperados = localStorage.getItem('dadosCadastro');
   const pessoaRecuperada = JSON.parse(dadosRecuperados);
 
+  
+
   // Exibir os dados recuperados no console (para verificar)
   console.log(pessoaRecuperada);
 

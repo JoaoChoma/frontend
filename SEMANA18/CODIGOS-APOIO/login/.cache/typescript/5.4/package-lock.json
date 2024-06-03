@@ -1,0 +1,17 @@
+{
+  "name": "5.4",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "dependencies": {
+        "types-registry": "^0.1.685"
+      }
+    },
+    "node_modules/types-registry": {
+      "version": "0.1.685",
+      "resolved": "https://registry.npmjs.org/types-registry/-/types-registry-0.1.685.tgz",
+      "integrity": "sha512-dC3Nqu/q2Ey8Jj/YV0plEub0oycMiu3VaAf+tf8X5uhtiRS4iF1BubY5cra1LIaKr+fTblxQvoVAYIPeVj1A9g=="
+    }
+  }
+}
