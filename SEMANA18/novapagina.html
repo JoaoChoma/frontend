@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova pagina</title>
+</head>
+<body>
+  <h1>Nova pagina</h1>
+
+  <div id='lista'></div>
+
+  <script>
+
+    window.onload = function(){
+      consultarBanco();
+    }
+
+    function consultarBanco(){
+      const stringJson = localStorage.getItem('memoria');
+      const obj = JSON.parse(stringJson);
+      //console.log(obj);
+      imprimir(obj);
+    }
+
+    function imprimir(vetorDados){
+      document.getElementById('lista').innerHTML = '';
+      for(let i = 0; i < vetorDados.length; i++){
+        let obj = vetorDados[i];
+
+        let p = document.createElement('p');
+        p.innerHTML = `
+          id: ${obj.id} - 
+          item: ${obj.item}
+        `;
+        document.getElementById('lista').appendChild(p);
+      }
+    }
+  
+    
+  </script>
+
+  <a href="index.html">Index page</a>
+</body>
+</html>

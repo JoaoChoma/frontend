@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <input type="text" id='item'>
+  <button onclick="addItem()">Enviar</button>
+
+  <div id='lista'>
+    
+  </div>
+
+
+  <a href="novapagina.html"> Nova Pagina </a>
+  
+  <script>
+    catalogo = [];
+    
+    function addItem(){
+      var item = document.getElementById('item').value;
+
+      const obj = {
+        item: item,
+        id: Date.now()
+      }
+
+      catalogo.push(obj);
+      //console.log(catalogo);
+
+      const stringJson = JSON.stringify(catalogo);
+      //console.log(stringJson);
+
+      localStorage.setItem('memoria', stringJson);
+      //localStorage.setItem('carrinho', stringJson);
+
+      consultarBanco();
+    }
+
+    function consultarBanco(){
+      const stringJson = localStorage.getItem('memoria');
+      const obj = JSON.parse(stringJson);
+      //console.log(obj);
+      imprimir(obj);
+    }
+
+    function imprimir(vetorDados){
+      document.getElementById('lista').innerHTML = '';
+      for(let i = 0; i < vetorDados.length; i++){
+        let obj = vetorDados[i];
+
+        let p = document.createElement('p');
+        p.innerHTML = `
+          id: ${obj.id} - 
+          item: ${obj.item}
+        `;
+        document.getElementById('lista').appendChild(p);
+      }
+    }
+    
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
