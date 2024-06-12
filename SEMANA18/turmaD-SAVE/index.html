@@ -59,9 +59,25 @@
         p.innerHTML = `
           id: ${obj.id} - 
           item: ${obj.item}
+          <button onclick='addCarrinho(${i})'>Carrinho</button>
         `;
         document.getElementById('lista').appendChild(p);
       }
+    }
+
+    const carrinho = [];
+    function addCarrinho(indiceItem){
+
+      const stringJson = localStorage.getItem('memoria');
+      const obj = JSON.parse(stringJson);
+
+
+      carrinho.push(obj[indiceItem]);
+
+      const novaStringJson = JSON.stringify(carrinho);
+      //console.log(stringJson);
+
+      localStorage.setItem('carrinho', novaStringJson);
     }
     
   </script>
